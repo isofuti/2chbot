@@ -9,7 +9,7 @@ class Browser():
         opts = Options()
         opts.headless = True
         assert opts.headless
-        dweb = webdriver.Chrome(executable_path='C:\chromedriver.exe', options=opts)
+        dweb = webdriver.Chrome(executable_path='chromedriver.exe', options=opts)
         dweb.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131'})
         dweb.get('https://2ch.hk/b/')
         time.sleep(10)
