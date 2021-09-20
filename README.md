@@ -5,3 +5,4 @@ Initially, the bot did not use a trained model, but used a regular keyword filte
 Hopefully this project will be a good start to my portfolio.
 
 To use, install all missing libraries and paste WEBHOOK_ID and WEBHOOK_TOKEN into hook.py
+Selenium uses Google Chrome and chromedriver.
