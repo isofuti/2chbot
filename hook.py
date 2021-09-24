@@ -33,13 +33,13 @@ class WebHook():
         if len(flist) != 0:
             content = content + '**С пометкой FAP!**@everyone\n'
             for i, item in enumerate(flist):
-                hr = str(flist[i])
+                hr = str(item)
                 content = content + hr + '\n'
 
         if len(wlist) != 0:
             content = content + '**С пометкой WEBM!**@everyone\n'
             for i, item in enumerate(wlist):
-                hr = str(wlist[i])
+                hr = str(item)
                 content = content + hr + '\n'
         
         return content
