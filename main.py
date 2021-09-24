@@ -37,7 +37,7 @@ class Program():
 
                     checkbannedwords = Filters.findbanned(wordsinposttext)
 
-                    if checkbannedwords == False:
+                    if checkbannedwords is False:
 
                         category = Filters.findcategory(model, vectorizer, posttext)
 
