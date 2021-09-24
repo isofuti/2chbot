@@ -3,10 +3,13 @@ from browser import Browser
 from filters import Filters
 from hook import WebHook
 import sys
+import time
 
 class Program():
 
     def MainProgram():
+
+        print(time.asctime())
 
         file = open('trainedmodel.pkl', 'rb')
 
@@ -48,6 +51,7 @@ class Program():
                                     faplist.append(missedtext)
                                     faplist.append(href)
                                     f.write(href)
+                                    
                         if str(category) == 'webm':
 
                             if thread not in dc and href not in pastthread:
@@ -64,8 +68,12 @@ class Program():
                 print(e)
                 continue
 
-        WebHook.send_hook(faplist, webmlist)
+        if len(faplist) != 0 or len(webmlist) != 0:
+            WebHook.send_hook(faplist, webmlist)
 
+        else:
+            print('Not Found')
+            
         sys.exit()
 
 Program.MainProgram()
