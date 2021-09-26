@@ -12,15 +12,15 @@ class WebHook():
     def random_pic():
 
         piclist = [
-            'C:/Users/Professional/Desktop/animepic/pic.png',
-            'C:/Users/Professional/Desktop/animepic/unnamed.jpg',
-            'C:/Users/Professional/Desktop/animepic/16272953781160.png',
-            'C:/Users/Professional/Desktop/animepic/16272398202303.jpg',
-            'C:/Users/Professional/Desktop/animepic/16272281200690.jpg',
-            'C:/Users/Professional/Desktop/animepic/be20446a33015be07863330480ec3189--tag-polyvore.jpg',
-            'C:/Users/Professional/Desktop/animepic/ccdeaa0aa1a833a352d5f5194181c95e.jpg',
-            'C:/Users/Professional/Desktop/animepic/d8275d0b892dd9d5cfbee0990e6261d4.jpg',
-            'C:/Users/Professional/Desktop/animepic/b05043a47b2f36e01f840b419c4653cf.jpg'
+            'hookpic/pic.png',
+            'hookpic/unnamed.jpg',
+            'hookpic/16272953781160.png',
+            'hookpic/16272398202303.jpg',
+            'hookpic/16272281200690.jpg',
+            'hookpic/be20446a33015be07863330480ec3189--tag-polyvore.jpg',
+            'hookpic/ccdeaa0aa1a833a352d5f5194181c95e.jpg',
+            'hookpic/d8275d0b892dd9d5cfbee0990e6261d4.jpg',
+            'hookpic/b05043a47b2f36e01f840b419c4653cf.jpg'
         ]
         randpic = random.choice(piclist)
 
