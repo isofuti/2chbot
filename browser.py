@@ -1,3 +1,8 @@
+#####################################
+#       Code by SochnoeAnime        #
+#      github.com/SochnoeAnime      #
+#       2021, Nizhny Novgorod       #
+#####################################
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
