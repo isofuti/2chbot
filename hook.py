@@ -1,3 +1,8 @@
+#####################################
+#       Code by SochnoeAnime        #
+#      github.com/SochnoeAnime      #
+#       2021, Nizhny Novgorod       #
+#####################################
 import random
 import discord
 from discord import webhook, RequestsWebhookAdapter
