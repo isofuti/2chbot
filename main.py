@@ -22,9 +22,9 @@ class Program():
         print('Model Loaded')
         f = open('C:/Ass-coding/2chbot/2chbot/pastthread.txt', 'r+')
         pastthread = str(f.readlines())
-        dc = []#an array to avoid repetition 
-        faplist = []#array with fap content 
-        webmlist = []#array with webm content 
+        dc = []#an array to avoid repetition
+        faplist = []#array with fap content
+        webmlist = []#array with webm content
 
         threads = Browser.load_threads()#open a browser, go to the site and parse all threads
 
@@ -38,14 +38,14 @@ class Program():
 
                 if len(posttext) <= 150 and len(posttext) > 0:#check if there are characters in the main post
 
-                    wordsinposttext = Filters.string_preparation(posttext)#select only Cyrillic and Latin characters 
+                    wordsinposttext = Filters.string_preparation(posttext)#select only Cyrillic and Latin characters
 
-                    checkbannedwords = Filters.find_banned(wordsinposttext)#we find ban words 
+                    checkbannedwords = Filters.find_banned(wordsinposttext)#we find ban words
 
                     if checkbannedwords is False:
 
                         href = thread.find_element_by_xpath('.//a').get_attribute('href')#take a link to the thread
-                        category = Filters.find_category(model, vectorizer, posttext)#define the category 
+                        category = Filters.find_category(model, vectorizer, posttext)#define the category
 
                         if category == 'fap':
 
