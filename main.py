@@ -35,11 +35,11 @@ class Program():
                     wordsinposttext = Filters.string_preparation(posttext)
                     href = thread.find_element_by_xpath('.//a').get_attribute('href')
 
-                    checkbannedwords = Filters.findbanned(wordsinposttext)
+                    checkbannedwords = Filters.find_banned(wordsinposttext)
 
                     if checkbannedwords is False:
 
-                        category = Filters.findcategory(model, vectorizer, posttext)
+                        category = Filters.find_category(model, vectorizer, posttext)
 
                         if str(category) == 'fap':
 
