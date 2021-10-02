@@ -12,7 +12,7 @@ class Filters():
 
         return newstr
 
-    def findbanned(text):
+    def find_banned(text):
 
         falsewords = [
             'избиений', 'унижений', 'избиения', 'унижения', 'nofap', 
@@ -29,7 +29,7 @@ class Filters():
 
         return False
 
-    def findcategory(model, vectorizer, text):
+    def find_category(model, vectorizer, text):
 
         category = model.predict(vectorizer.transform([str(text)]))[0]
 
